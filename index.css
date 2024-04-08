@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+
+.header{
+    background-image: url(./Assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border-bottom: 2px solid #fff;
+    margin: auto;
+}
+.navbar .nav-span{
+    color: #fff;
+}
+.header .navbar .img{
+    color: wheat;
+    padding-top: 20px;
+    color: #fff;
+}
+.header .navbar .nav ul li{
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+}
+.header .navbar .nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.header .navbar .nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -4px;
+    background: crimson;
+    height: 4px;
+    opacity: 0;
+    transition: 0.6s;
+}
+.header .navbar .nav ul li a:hover:before{
+    width: 100%;
+    opacity: 1;
+}
+.header .detail{
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    
+    
+    color: #fff;
+}
+.header .detail h1{
+    font-size: 7.5rem;
+}
+.header .navbar span{
+    
+    color: crimson;
+    font-size: 2rem;
+    position: relative;
+}
+
+.header .detail button{
+    width: 150px;
+    font-size: 1.3rem;
+    height: 40px;
+    background: transparent;
+    border: 2px solid crimson;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+}
+.header .detail button::after{
+content: "";
+position: absolute;
+background: crimson;
+width: 100%;
+left: 0;
+bottom: 0;
+height: 100%;
+border-radius: 25px;
+z-index: -999;
+transition: 0.7s;
+transform: scale(0);
+opacity: 0;
+}
+.header .detail button:hover:after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* home section styling */
+
+.home-section .home-content .text-1 {
+    margin-top: 70px;
+    font-size: 27px;
+}
+
+.home-section .home-content .text-2 {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: 10px 0;
+    margin: 10px 0;
+    -webkit-text-stroke-width: 2px;
+    
+}
+
+.home-section .home-content .text-3 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+.home-section .home-content .text-3 span {
+    color:  crimson;
+    font-weight: 500;
+}
+
+.home-section .home-content a {
+    display: inline-block;
+    margin: 7px 0;
+    text-align: center;
+    background: crimson;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    font-family: 'Amatic SC', cursive;
+}
+
+.home-section .home-content a:hover {
+    color: rgb(225, 225, 225);
+    background: none;
+}
+
+.about-heading{
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: flex ;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.about .about-content .right .text span {
+    color: crimson;
+}
+.about-heading h1{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+.about-heading span{
+    color: crimson;
+    padding-top: .5rem;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+.about-heading span::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 35%;
+    height: 2px;
+    top: 55%;
+    left: -35%;
+}
+.about-heading span::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 35%;
+    height: 2px;
+    top: 60%;
+    right: -37%;
+}
+.about-heading span{
+    font-size: 1rem;
+}
+.about-detail{
+    color: #fff;
+    display:flex;
+    gap: 2;
+}
+.about-detail .img{
+    width: 100%;
+    height: 100%;
+    padding-top: 88px;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about-detail .img img{
+    height: 280px;
+    width: 350px;
+}
+.about-detail .about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5% ;
+    padding-bottom: 2%;
+}
+.about h1{
+    color: crimson;
+    padding-bottom: .3rem;
+}
+.about-detail span{
+    padding-bottom: .3rem;
+    color: crimson;
+}
+.about-detail .about .text {
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.about-detail p{
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.about-detail .about-button{
+    width: 25%;
+    height: 40px;
+    background: crimson;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 60%;
+}
+.about-detail .about-button a{
+    color: white;
+}
+.about-detail .about-button:hover{
+    background: transparent;
+}
+.about-detail .about-button::after{
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 100%;
+    border-radius: 10px;
+left: 0;
+top: 0;
+background-color: crimson;
+z-index: -999;
+transition: 0.5s;
+}
+.about-detail .about-button:hover::after{
+   transform: scale(0);
+}
+
+/*----------Skills section-----------*/
+.skills {
+    background-color: #000000;
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-heading h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.skills-heading span {
+    color: crimson;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust as needed */
+    gap: 30px;
+    justify-content: center;
+}
+
+.skill-card {
+    margin: 10px 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.skill-card span {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/*-----service section-----------*/
+.work-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-size:1.5rem;
+}
+.work-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.card{
+    margin: auto;
+    /* background: crimson; */
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.card p{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    padding-top: .5rem;
+    font-size: 15px;
+    position: relative;
+    padding: 3.5%;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+}
+.card .work-btn{
+width: 100px;
+height: 30px;
+background: crimson;
+margin-top: 1.5rem;
+color: #fff;
+border: 2px solid crimson;
+font-size: 15px;
+font-weight: 500;
+}
+.card .work-btn a{
+    color: #fff;
+}
+.card:hover .work-btn{
+    cursor: pointer;
+    background: black;
+}
+.card{
+    box-shadow: 5px 5px 30px #2a2828;
+    border-radius: 8px;
+}
+.card:hover{
+    background: crimson;
+}
+
+/*----------Projects section-----------*/
+.projects {
+    background-color: #000;
+    padding: 50px 0;
+    margin: 50px 30px;
+}
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.projects-heading h1 {
+    font-size: 2.5rem;
+}
+
+.projects-heading span {
+    color: crimson;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project-btn:hover {
+    background-color: #8b0000;
+}
+
+/*--------contact section------*/
+
+.contact-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 8rem;
+    flex-direction: column;
+}
+.contact-text h1{
+    font-size: 3rem;
+    padding-bottom: 3px;
+}
+.contact-text .contact-span{
+    color: crimson;
+    font-size: 1.2rem;
+    position: relative;
+}
+.contact-text .contact-span::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background: #fff;
+    top: 60%;
+left: -30%;
+}
+.contact-detail-span p{
+    font-size: 1rem;
+    line-height: 9;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    padding: 25%;
+    justify-content: center;
+    align-items: center;
+}
+.address-detail .contact-detail-span {
+
+    position: relative;
+    padding: 8%;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-family: Georgia;
+}
+.contact-text .contact-span::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background: #fff;
+    top: 55%;
+    right: -30%;
+}
+.contact-detail{
+    display: flex;
+    color: #fff;
+    margin-top: 5rem;
+    
+}
+.contact-detail .address-detail{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.address-detail .first-h3{
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+.text{
+  padding-bottom: 2rem;
+
+}
+.address-detail .text-4{
+    font-family: 'Rampart One', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 3% 8%;
+    margin-left: -3px;
+}
+.first-detail h3{
+    font-size: 1.5rem;
+    color: crimson;
+}
+.Contact-right{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Contact-right ul{
+    list-style: none;
+}
+.Contact-right li{
+    padding: 10px;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+.Contact-right li a{
+    padding: 20px;
+    justify-content: center;
+    font-family: "DM Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #fff;
+}
+footer{
+    color: #000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background: #fff;
+}
+footer span{
+    color:crimson;
+}
